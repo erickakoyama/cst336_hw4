@@ -13,11 +13,11 @@
   <body>
     <header>
       <h1>Networking in Space</h1>
-
+      
       <nav>
-        <a class="active" href="/">Home</a>
-        <a href="satellite-internet.php">Satellite Internet</a>
-        <a href="deep-space-network.php">Deep Space Network</a>
-        <a href="interplanetary-internet.php">Interplanetary Internet</a>
+        <a class="<%= activeRoute === '/' ? 'active' : '' %>" href="/">Home</a>
+        <a class="<%= activeRoute === 'satellite-internet' ? 'active' : '' %>" href="/satellite-internet">Satellite Internet</a>
+        <a class="<%= activeRoute === 'deep-space-network' ? 'active' : '' %>" href="/deep-space-network">Deep Space Network</a>
+        <a class="<%= activeRoute === 'interplanetary-internet' ? 'active' : '' %>" href="/interplanetary-internet">Interplanetary Internet</a>
       </nav>
     </header>

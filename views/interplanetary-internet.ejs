@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+
+  <main>
+    <figure>
+      <img alt="Interplanetary Network Communication" src="https://media.wired.com/photos/593353f768cb3b3dc40986f0/master/w_2560%2Cc_limit/interplanetaryinternet.jpg" />
+    </figure>
+    <div id="topic-content">
+      <p>Vincent Cerf is a well-known author of the TCP/IP protocol with co-developer Bob Kahn
+      </p>
+      <p>
+        With so many crafts in space, and with such dedicated data streams inbound for NASA missions, there has been a growing need for an overarching network protocol for networking in space. Vincent Cerf, with his deep background in networking, has contributed
+        much to such a protocol.
+      </p>
+      <p>
+        Without the infrastructure of an interplanetary network, communication with craft has been mostly point-to-point radio links. Vincent Cerf, in developing a space internet protocol, first started out wondering about TCP/IP fitness for the task. TCP turned
+        out to not be a very good fit considering some of the complications of space networking. The speed of light is pretty slow, it can take at least a few minutes for a one-way trip from Earth to Mars. There is also the issue that TCP was designed
+        to not maintain much data at endpoints, so if a device's memory is full when receiving a packet, it would typically be discarded. Unfortunately, the cost of retransmission in the case of space can be prohibitive.
+      </p>
+    </div>
+  </main>
+
+  <div class="references">
+    <div>
+      <strong>Referenced Links</strong>
+    </div>
+    <div class="links">
+      <a href="https://www.wired.com/2013/05/vint-cerf-interplanetary-internet/">Google's Chief Internet Evangelist on Creating the Interplanetary Internet</a>
+      <a href="https://media.wired.com/photos/593353f768cb3b3dc40986f0/master/w_2560%2Cc_limit/interplanetaryinternet.jpg">Page Image of Interplanetary Network Communication</a>
+    </div>
+  </div>
+
+  <%- include('partials/footer.ejs') %>
